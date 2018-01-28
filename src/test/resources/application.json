@@ -1,15 +1,50 @@
 [
   {
-    "name":"robot",
-    "className":"com.xilidou.framework.ioc.entity.Robot"
+    "name": "robot",
+    "className": "com.xilidou.framework.ioc.entity.Robot",
+    "propertyArgs": [
+      {
+        "name": "code",
+        "value": "89757"
+      },
+      {
+        "name": "hand",
+        "ref": "hand"
+      },
+      {
+        "name": "mouth",
+        "ref": "mouth"
+      }
+    ]
   },
   {
-    "name":"hand",
-    "className":"com.xilidou.framework.ioc.entity.Hand"
+    "name": "hand",
+    "className": "com.xilidou.framework.ioc.entity.Hand",
+    "propertyArgs": [
+      {
+        "name": "number",
+        "value": "2"
+      },
+
+      {
+        "name": "mouth",
+        "ref": "mouth"
+      }
+    ]
   },
   {
-    "name":"mouth",
-    "className":"com.xilidou.framework.ioc.entity.Mouth"
+    "name": "mouth",
+    "className": "com.xilidou.framework.ioc.entity.Mouth",
+    "propertyArgs": [
+      {
+        "name": "count",
+        "value": "28"
+      },
+      {
+        "name": "hand",
+        "ref": "hand"
+      }
+      ]
   }
 ]
 

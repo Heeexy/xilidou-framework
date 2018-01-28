@@ -29,10 +29,10 @@ public class JsonUtils {
         }
     }
 
-    public static <T> T readValue(InputStream is,Class<T> cls){
-        try{
-            return mapper.readValue(is,cls);
-        }catch (Exception e){
+    public static <T> T readValue(InputStream is, Class<T> cls) {
+        try {
+            return mapper.readValue(is, cls);
+        } catch (Exception e) {
             return null;
         }
     }
@@ -61,13 +61,14 @@ public class JsonUtils {
         }
     }
 
-    public static <T> T readValue(InputStream is,TypeReference valueTypeRef){
-        try{
-            return mapper.readValue(is,valueTypeRef);
-        }catch (Exception e){
+    public static <T> T readValue(InputStream is, TypeReference valueTypeRef) {
+        try {
+            return mapper.readValue(is, valueTypeRef);
+        } catch (Exception e) {
             return null;
         }
     }
+
     public static String writeValue(Object entity) {
         try {
             return mapper.writeValueAsString(entity);
@@ -99,5 +100,4 @@ public class JsonUtils {
         mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
-
 }
